@@ -37,3 +37,5 @@ class Bank(User):
     def __init__(self,name,age,gender):
         super().__init__(name,age,gender)
         self.balance = 0
+
+#Thank you
