@@ -1,0 +1,39 @@
+#Banking Application for Python Project
+#It allows users to open new accounts
+#Users can make transactions by entering the respective amounts
+#Deposit Amount
+#Withdraw Amount
+#Balance Enquiry
+#can view user to see how many users there are along with their details
+#All account holder list with details
+#Modify Account
+#Close Account
+
+
+#Banking System
+#Holds details about a user
+#Has a function to show user details
+#Child Class : Bank
+#Stores details about the account balance
+#Stores details about the amount
+#Allows for deposits, withdrawal, view_balance
+
+#Parent Class
+class User ():
+    def __init__(self,name,age,gender):
+        self.name = name
+        self.age  = age
+        self.gender = gender
+ 
+    def show_details(self) :
+        print("Personal Details")
+        print("")
+        print("Name ", self.name)
+        print("Age  ", self.age)
+        print("Gender ", self.gender)
+
+#Child Class
+class Bank(User):
+    def __init__(self,name,age,gender):
+        super().__init__(name,age,gender)
+        self.balance = 0
